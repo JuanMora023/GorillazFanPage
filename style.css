@@ -1,0 +1,802 @@
+
+/*Cuerpo y adaptabilidad*/
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+  
+  body h2{
+      font-family: menu;
+      font-size: 35px;
+  }
+  
+  body p{
+      font-family: parrafo;
+      font-size: 15px;
+      font-weight: bold;
+  }
+  
+  .resolucion {
+      width: 99%;
+      text-align: center;
+  }
+
+  html{
+    scroll-behavior: smooth;
+   }
+
+  section[ID]{
+    scroll-margin-top: 90px;
+  }
+/*Fuentes*/
+@font-face {
+    font-family: text;
+    src: url("gorillaz_1.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: menu;
+    src: url("Hummer\ Miller\ Demo.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: title;
+    src: url("Dosen\ Killer.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url("ImpendingDistasterDEMO-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*Movil*/
+@media (max-width: 767px){
+.desktop {display: none;}
+.tablet {display: none;}
+/*Header*/
+header {
+    margin: auto;
+    padding: auto;
+    background-image: url(IMAGANES/Gorillaz_F.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: 100% 100%;
+    
+}
+
+.ContenedorH{
+    display: flex;
+}
+.ContenedorH img{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 45px;
+    height: 45px;
+}
+
+.ContenedorH h1{
+    font-family: "text";
+    color: aliceblue;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.nav li {
+    list-style: none;
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    left: 30px;
+    top: 85px;
+}
+.ContenedorH nav a{
+    font-size: 18px;
+    font-family: menu; 
+   
+    margin-top: 25px;
+    display: inline-table;
+    
+   }
+   
+   .ContenedorH a{
+       text-decoration: none;
+       line-height: 25px;
+       color: white;
+   }
+   
+   .ContenedorH a:hover{
+       transition: all .2s;
+       transform: scale(1.1);
+       color: white;
+      } 
+
+/*Integrantes*/
+.ContenedorInt{
+    font-family: title;
+    font-size: 20px;
+    justify-content: center;
+    
+    text-align: center;
+    margin-top: 90px;
+   
+}
+.ContenedorInt img{
+   
+    margin: 20px;
+    width: 240px;
+    height: 290px;
+}
+
+
+.ContenedorInt button{
+    padding: 5px 20px;
+    font-family: menu;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;   
+}
+
+.ContenedorInt button:hover{
+    transition: 1s;
+    background-color: aqua;
+}
+
+.ContenedorInt h2{
+    margin-top: 10px;
+}
+
+.personaje1{
+    margin-top: 40px;
+}
+
+.personaje2{
+    margin-top: 190px;
+}
+
+.personaje3{
+    margin-top: 190px;
+}
+
+.personaje4{
+    margin-top: 190px;
+}
+
+.ContenedorEllos p{
+    margin: 20px;
+    text-align: center;
+    
+}
+
+/*Sobre ellos*/
+.ContenedorEllos{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+.ContenedorEllos img {
+    width: 300px;
+
+}
+
+.ContenedorEllos button{
+    margin-top: 20px;
+    padding: 5px 90px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;   
+}
+.ContenedorEllos button:hover{
+    transition: all .2s;
+    transform: scale(1.1);
+    color: black;
+   } 
+
+
+/*Datos*/
+.ContenedorDatos{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+
+}
+
+.ContenedorDatos p{
+    margin: 10px;
+}
+#imagen{
+    margin-top: 90px;
+}
+
+#imagen img{
+    width: 320px;
+}
+
+
+/*musica*/
+.ContenedorMusica{
+    margin: 20px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.ContenedorMusica h2{
+    text-align: center;
+}
+
+.ContenedorMusica img{
+    text-align: center;
+    margin-top: 60px;
+    padding: 3%;
+    width: 190px;
+    height: 190px;
+
+}
+
+
+
+
+
+/*formulario*/
+.ContenedorForm{
+    
+    margin-top: 70px;
+    text-align: center;
+    font-family: parrafo;
+}
+.ContenedorForm button{
+    padding: 5px 40px;
+    margin-top: 30px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none; 
+}
+
+/*PiePag*/
+.ContenedorPie {
+    margin-top: 30px;
+    text-align: center;
+}
+.ContenedorPie img{
+    width: 100px;
+    height: 100px;
+}
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 990px){
+.desktop {display: none;}
+.movil {display: none;}
+/*Header*/
+header {
+    margin: auto;
+    padding: auto;
+    background-image: url(IMAGANES/Gorillaz_F.jpg);
+    width: 100%;
+    height: 420px;
+    background-size: 100% 100%;
+    
+}
+
+.ContenedorH{
+    display: flex;
+}
+.ContenedorH img{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 45px;
+    height: 45px;
+}
+
+.ContenedorH h1{
+    font-family: "text";
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.nav li {
+    list-style: none;
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    right: 40px;
+}
+.ContenedorH nav a{
+    font-size: 22px;
+    font-family: menu; 
+   
+    margin-top: 25px;
+    display: inline-table;
+    
+   }
+   
+   .ContenedorH a{
+       text-decoration: none;
+       line-height: 25px;
+       color: black;
+   }
+   
+   .ContenedorH a:hover{
+       transition: all .2s;
+       transform: scale(1.1);
+       color: white;
+      } 
+
+/*Integrantes*/
+.ContenedorInt{
+    font-family: title;
+    font-size: 20px;
+    justify-content: center;
+    
+    text-align: center;
+    margin-top: 90px;
+   
+}
+.ContenedorInt img{
+   
+    margin: 20px;
+    width: 240px;
+    height: 290px;
+}
+
+
+.ContenedorInt button{
+    padding: 5px 20px;
+    font-family: menu;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;   
+}
+
+.ContenedorInt button:hover{
+    transition: 1s;
+    background-color: aqua;
+}
+
+.ContenedorInt h2{
+    margin-top: 10px;
+}
+
+.personaje1{
+    margin-top: 40px;
+}
+
+.personaje2{
+    margin-top: 190px;
+}
+
+.personaje3{
+    margin-top: 190px;
+}
+
+.personaje4{
+    margin-top: 190px;
+}
+
+.ContenedorEllos p{
+    margin: 20px;
+    text-align: center;
+    
+}
+
+/*Sobre ellos*/
+.ContenedorEllos{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+.ContenedorEllos img {
+    width: 700px;
+
+}
+
+.ContenedorEllos button{
+    margin-top: 20px;
+    padding: 5px 90px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;   
+}
+.ContenedorEllos button:hover{
+    transition: all .2s;
+    transform: scale(1.1);
+    color: black;
+   } 
+/*Datos*/
+.ContenedorDatos{
+    margin: auto;
+    margin-top: 190px;
+    text-align: center;
+}
+
+
+.ContenedorDatos p{
+    margin: 10px;
+}
+#imagen{
+    margin-top: 90px;
+}
+
+#imagen img{
+
+    width: 720px;
+}
+/*musica*/
+.ContenedorMusica{
+    margin: auto;
+    margin-top: 120px;
+    text-align: justify;
+}
+
+.ContenedorMusica h2{
+    text-align: center;
+}
+
+.ContenedorMusica img{
+    position: relative;
+    margin-top: 60px;
+    padding: 3%;
+    width: 350px;
+    height: 350px;
+    align-content: center;
+}
+
+#album1{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    justify-content: center;
+}
+
+#album1 p{
+    margin-right: 30px;
+    margin-left: 80px;
+    max-width: 450px;
+   
+}
+
+.agre1 img{
+    display: flex;
+    width: 700px;
+    opacity: 80%;
+    margin-left: 250px;
+   }
+
+#album2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+#album2 p{
+    margin-right: 30px;
+    margin-left: 80px;
+    max-width: 450px;
+}
+
+.agre2 img{
+ display: flex;
+ width: 700px;
+ opacity: 80%;
+ margin-left: 250px;
+}
+#album3{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.agre3 img{
+    display: flex;
+    width: 700px;
+    opacity: 80%;
+    margin-left: 250px;
+   }
+
+#album3 p{
+    margin-right: 30px;
+    margin-left: 80px;
+    max-width: 450px;
+}
+
+/*formulario*/
+.ContenedorForm{
+    margin-top: 70px;
+    text-align: center;
+    font-family: parrafo;
+}
+.ContenedorForm button{
+    padding: 5px 60px;
+    margin-top: 30px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none; 
+}
+
+/*PiePag*/
+.ContenedorPie {
+    margin-top: 30px;
+    text-align: center;
+}
+.ContenedorPie img{
+    width: 150px;
+    height: 150px;
+}
+}
+
+/*Escritorio*/
+@media (min-width: 991px){
+.tablet {display: none;}
+.movil {display: none;} 
+
+/*Header*/
+header {
+    margin: auto;
+    padding: auto;
+    background-image: url(IMAGANES/Gorillaz_F.jpg);
+    width: 100%;
+    height: 620px;
+    background-size: 100% 100%;
+    
+}
+
+.ContenedorH{
+    display: flex;
+}
+.ContenedorH img{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 45px;
+    height: 45px;
+}
+
+.ContenedorH h1{
+    font-family: "text";
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.nav li {
+    list-style: none;
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    right: 40px;
+}
+.ContenedorH nav a{
+    font-size: 22px;
+    font-family: menu; 
+   
+    margin-top: 25px;
+    display: inline-table;
+    
+   }
+   
+   .ContenedorH a{
+       text-decoration: none;
+       line-height: 25px;
+       color: black;
+   }
+   
+   .ContenedorH a:hover{
+       transition: all .2s;
+       transform: scale(1.1);
+       color: white;
+      } 
+
+/*Integrantes*/
+.ContenedorInt{
+    font-family: title;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 90px;
+   
+}
+.ContenedorInt img{
+   
+    margin: autopx;
+    width: 240px;
+    height: 290px;
+}
+
+
+.ContenedorInt button{
+    padding: 5px 20px;
+    font-family: menu;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;   
+}
+
+.ContenedorInt button:hover{
+    transition: 1s;
+    background-color: aqua;
+}
+
+.ContenedorInt h2{
+    margin-top: 10px;
+}
+
+/*Sobre ellos*/
+.ContenedorEllos{
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.ContenedorEllos img{
+    width: 820px;
+    height: 490px;
+}
+
+.ContenedorEllos p{
+    margin: 20px;
+    font-size: 20px
+}
+
+.ContenedorEllos button{
+    margin-top: 20px;
+    padding: 5px 90px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;   
+}
+.ContenedorEllos button:hover{
+    transition: all .2s;
+    transform: scale(1.1);
+    color: black;
+   } 
+/*Datos*/
+.ContenedorDatos{
+    margin: auto;
+    margin-top: 190px;
+    text-align: center;
+}
+
+
+.ContenedorDatos p{
+    margin: 10px;
+}
+#imagen{
+    margin-top: 90px;
+}
+
+#imagen img{
+
+    width: 920px;
+}
+/*musica*/
+.ContenedorMusica{
+    text-align: justify;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.ContenedorMusica h2{
+    text-align: center;
+}
+
+.ContenedorMusica img{
+    position: relative;
+    margin-top: 60px;
+    padding: 3%;
+    width: 350px;
+    height: 350px;
+    align-content: center;
+}
+
+#album1{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    justify-content: center;
+}
+
+#album1 p{
+    margin-left: 80px;
+    max-width: 450px;
+}
+
+.agre1 img{
+    display: flex;
+    width: 700px;
+    opacity: 80%;
+    margin-left: 250px;
+   }
+
+#album2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+#album2 p{
+    margin-left: 80px;
+    max-width: 450px;
+}
+
+.agre2 img{
+ display: flex;
+ width: 700px;
+ opacity: 80%;
+ margin-left: 250px;
+}
+#album3{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.agre3 img{
+    display: flex;
+    width: 700px;
+    opacity: 80%;
+    margin-left: 250px;
+   }
+
+#album3 p{
+
+    margin-left: 80px;
+    max-width: 450px;
+}
+
+/*formulario*/
+.ContenedorForm{
+    margin-top: 70px;
+    text-align: center;
+    font-family: parrafo;
+}
+.ContenedorForm button{
+    padding: 5px 60px;
+    margin-top: 10px;
+    font-family: menu;
+    font-size: 20px;
+    border: none;
+    text-decoration: none; 
+}
+
+/*PiePag*/
+.ContenedorPie {
+    margin-top: 30px;
+    text-align: center;
+}
+.ContenedorPie img{
+    width: 200px;
+    height: 200px;
+}
+}
